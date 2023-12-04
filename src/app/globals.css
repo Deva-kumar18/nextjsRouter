@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.link{
+  margin-right: 50px;
+  
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: 1px solid black;
+  color: black;
+}
+.header{
+  margin-bottom: 20px;
+}
+.link-map{
+  height: 35px;
+  width: 120px;
+  background-color: cadetblue;
+  margin: 5px 5px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-map:hover{
+  height: 35px;
+  width: 120px;
+  background-color:grey;
+  margin: 5px 5px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard{
+  height: 100vh;
+  width: 100vw;
+  background-color: brown;
+  text-align: center;
+}
+.link:hover{
+  background-color: darkcyan;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: 1px solid black;
+  color: white;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
